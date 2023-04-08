@@ -1,2 +1,7 @@
-source ./open_or_cd.sh
-source ./fuzzy-find-dir.sh
+source $HOME/util-scripts/open_or_cd.sh
+source $HOME/util-scripts/fuzzy-find-dir.sh
+
+fuzzy_and_cd ()  {
+  cd $(select_dir $1)
+}
+
